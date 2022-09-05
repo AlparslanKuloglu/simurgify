@@ -276,9 +276,11 @@
          });
 		 
 		 jQuery("#testimonial-carousel-single").owlCarousel({
-			items:1,
-			autoplay:true,
-			autoplayTimeout:5000,
+			items:4,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			//animateOut: 'fadeOut',
 			//animateIn: 'fadeIn',
 			loop:true,
@@ -293,6 +295,9 @@
 			items:4,
 			loop:true,
 			margin:60,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			responsive:{
 				1000:{
 					items:4
@@ -310,6 +315,9 @@
             center: false,
 			loop:true,
 			margin:30,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			responsive:{
 				1000:{
                     items:3
@@ -327,6 +335,9 @@
             center: false,
 			items:3,
 			loop:true,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			margin:30,
 			responsive:{
 				1000:{
@@ -346,6 +357,9 @@
 			items:5,
 			loop:true,
 			margin:20,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			responsive:{
 				1000:{
 					items:3
@@ -385,6 +399,9 @@
 			items:4,
 			loop:true,
 			margin:15,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			responsive:{
 				1000:{
 					items:4
@@ -404,8 +421,10 @@
 			loop:true,
 			dots: true,
 			margin:30,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			autoplay:false,
-			autoplayTimeout:0,
 			responsive:{
 				1000:{
 					items:4
@@ -425,6 +444,9 @@
 			autoplayTimeout:5000,
 			animateOut: 'fadeOut',
 			animateIn: 'zoomIn',
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
 			loop:true,
 			dots:true,
 			margin:0,
