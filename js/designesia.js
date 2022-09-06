@@ -1,7 +1,7 @@
  /* --------------------------------------------------
   * © Copyright 2021 - Jordis by Designesia
   * --------------------------------------------------*/
- (function($) {
+(function($) {
 	'use strict';
 
      /* --------------------------------------------------
@@ -312,6 +312,26 @@
          });
 		 
          jQuery("#testimonial-carousel").owlCarousel({
+            center: false,
+			loop:true,
+			margin:30,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+			responsive:{
+				1000:{
+                    items:3
+                },
+                600:{
+                    items:1
+                },
+                0:{
+                    items:1
+                }
+			}
+         });
+
+         jQuery("#testimonial-carousel-2").owlCarousel({
             center: false,
 			loop:true,
 			margin:30,

@@ -29,6 +29,20 @@ body {
     height: 100%
 }
 
+.logo_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+.company_logo {
+    border-radius: 100%;
+}
+.logo_box {
+    width: 105px;
+    height: 105px
+}
+
 body.boxed {
     margin: 30px;
     overflow: hidden;
