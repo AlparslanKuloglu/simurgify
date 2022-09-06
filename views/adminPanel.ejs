@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<title>Admin Panel</title>
+
+
+</head>
+
+<body>
+<h3>Admin Paneli</h3>
+
+<% for(let i=0;  i<mails.length; i++ ) { %> 
+
+<li>İsim: <%=mails[i].senderName  %> </li>
+<li>Mail: <%=mails[i].senderMail %> </li>
+<li>Telefon No: <%=mails[i].phoneNumber  %> </li>
+<li>Mesaj: <%=mails[i].message  %> </li>
+--------------------------------------------------
+
+<% } %> 
+
+
+</body>
+</html>
