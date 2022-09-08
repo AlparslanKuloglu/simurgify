@@ -4,7 +4,7 @@ const mailController = require('../controllers/mailController')
 
 
 router.route('/user').post(mailController.createMail)
-
+router.route('/admin').post(mailController.sendMail)
 
 
 

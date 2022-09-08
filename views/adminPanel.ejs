@@ -13,13 +13,26 @@
 <h3>Admin Paneli</h3>
 
 <% for(let i=0;  i<mails.length; i++ ) { %> 
+<div>
+
 
 <li>İsim: <%=mails[i].senderName  %> </li>
 <li>Mail: <%=mails[i].senderMail %> </li>
 <li>Telefon No: <%=mails[i].phoneNumber  %> </li>
 <li>Mesaj: <%=mails[i].message  %> </li>
 --------------------------------------------------
+<div style="color: white; padding: 15px 10px; background-color: #667aff; border-radius: 10px; " >
+    
+	<form style="width: 70%;" method="post" action="/mail/admin" >
+	  <input type="text" name="subject" placeholder="Mail Konusu...">
+	  <input type="text" name="message" placeholder="Yanıt Mesajı...">
+	  <input type="hidden" name="userEmail" value=<%=mails[i].senderMail %> >
+	  <button style="margin-top: 15px;"  type="submit" >Cevapla</button>
+	</form>
+  
+  </div>
 
+</div>
 <% } %> 
 
 
