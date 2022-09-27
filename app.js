@@ -4,7 +4,10 @@ const mysql = require('mysql')
 const Sequelize = require('sequelize')
 const pageRoute = require('./routes/pageRoute')
 const mailRoute = require('./routes/mailRoute')
+const path = require("path");
 
+app.set("views", path.join(__dirname, "views"));
+app.use(express.static(__dirname));
 
 
 const options = {                 // setting connection options
@@ -20,7 +23,7 @@ app.set("view engine", "ejs")
 
 //Middlewares
 
-//app.use(express.static('public'))
+app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 

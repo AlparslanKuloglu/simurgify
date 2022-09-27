@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<title>İletişim Sayfası</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jpreloader.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+    <link href="" rel="stylesheet" type="text/css" />
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-06.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+           <div class="col align-self-center ml-auto header-col-mid">
+              <!--mainmenu logo-->
+              <div class="menulogo_container">
+                 <img class="mainmenu_logo" src="./images/logo_smg.png" alt="logo" />
+              </div>
+              <!-- mainmenu begin -->
+              <ul style="margin-left: 370px;" id="mainmenu" class="scrollnav">
+                 <li><a href="">Anasayfa</a></li>
+                 <li></li>
+                 <li><a href="#section-about">Hakkımızda</a></li>
+                 <li></li>
+                 <li><a href="#section-portfolio">Portolyo</a></li>
+                 <li></li>
+                 <li><a href="#section-blog">Blog</a></li>
+                 <li></li>
+                 <li><a href="#section-contact">İletişim</a></li>
+                 <li></li>
+              </ul>
+              <!-- mainmenu close -->
+           </div>
+        </div>
+        <div class="row">
+           <div class="col-lg-12 wow fadeInRight">
+              <h4 class="title">Daha yakından tanışalım!</h4>
+              <h2 class="title">İletişime Geçin</h2>
+              <div class="title-underline"></div>
+           </div>
+        </div>
+        <form name="contactForm" id="contact_form" class="row form-default wow fadeInRight"
+           data-wow-delay=".25s" method="post" action="/mail/user">
+        
+           <div class="col-md-6">
+              <div class="field-set">
+                 <input type="text" name="senderName" id="name" class="form-control" placeholder="İsminiz" />
+                 <div class="line-fx"></div>
+              </div>
+              <div class="field-set">
+                 <input type="text" name="senderMail" id="email" class="form-control"
+                    placeholder="E-mail Adresiniz" />
+                 <div class="line-fx"></div>
+              </div>
+              <div class="field-set">
+                 <input type="text" name="phoneNumber" id="phone" class="form-control"
+                    placeholder="Telefon Numaranız" />
+                 <div class="line-fx"></div>
+              </div>
+           </div>
+           <div class="col-md-6">
+              <div class="field-set">
+                 <textarea name="message" id="message" class="form-control"
+                    placeholder="Bize ne söylemek istersiniz?"></textarea>
+                 <div class="line-fx"></div>
+              </div>
+           </div>
+           <div class="spacer-single"></div>
+           <div class="col-md-12 text-center">
+              <div id="submit">
+                 <input type="submit" id="send_message" value="Gönder" class="btn btn-custom color-2" />
+              </div>
+              <div id="mail_success" class="success">Your message has been sent successfully.</div>
+              <div id="mail_fail" class="error">Sorry, error occured this time sending your message.</div>
+           </div>
+        </form>
+     </div>
+
+</body>
+</html>
